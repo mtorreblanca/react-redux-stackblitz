@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
+import Hello from './ClickComponent';
 import './style.css';
 import { Provider } from 'react-redux';
 import { store } from './state';
@@ -27,6 +27,8 @@ class App extends Component<AppProps, AppState> {
     );
   }
 }
+
+export default App;
 
 render(
   <Provider store={store}>
